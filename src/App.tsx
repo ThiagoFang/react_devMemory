@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react'
 
+import RestartIcon from "./assets/restart.svg"
+import logoImage from './assets/devmemory_logo.png'
+
+import { GridItem } from './components/GridItem'
 import { Button } from './components/Button/Button'
 import { GridItemType } from './types/GridItemType'
-import logoImage from './assets/devmemory_logo.png'
 import { InfoItem } from "./components/InfoItem"
-import RestartIcon from "./assets/restart.svg"
 import { items } from './data/items'
 import * as C from "./AppStyles"
 
@@ -50,6 +52,10 @@ const App = () => {
     setShownCount(0)
   }
 
+  const handleItemClick = (index: number) => {
+    
+  }
+
   return(
    <C.Container>
      <C.Info>
@@ -64,7 +70,13 @@ const App = () => {
      </C.Info>
      <C.GridArea>
        <C.Grid>
-
+          {gridItems.map((item, index)=>(
+            <GridItem 
+              key={index}
+              item={item}
+              onClick={() => handleItemClick(index)}
+            />
+          ))}
        </C.Grid>
      </C.GridArea>
    </C.Container>
