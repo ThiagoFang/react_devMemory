@@ -54,4 +54,8 @@ export const Grid = styled.div`
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     width: 430px;
+
+    @media (max-width: 750px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 `;
