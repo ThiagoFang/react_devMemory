@@ -3,7 +3,9 @@
 ## 	&#127919; About
 Um jogo da memoria desenvolvido com React + TypeScript
 
-## &#127775; Features
-&#10004; Layout Responsivo  &#10004; TypeScript &#10004; Requisições GET
+Projeto desenvolvido durante o curso [B7web](https://b7web.com.br).
 
-### <a href="https://pokemon-list-qkuo4vrqm-thiagofang.vercel.app/">Clique aqui para visitar o site</a>
+## &#127775; Features
+&#10004; Layout Responsivo  &#10004; TypeScript
+
+### <a href="https://react-dev-memory.vercel.app/">Clique aqui para visitar o site</a>
